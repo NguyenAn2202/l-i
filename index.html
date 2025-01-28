@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mở Bao Lì Xì</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffedd5;
+        }
+        .container {
+            text-align: center;
+        }
+        .envelope {
+            background-image: url('https://cdn-icons-png.flaticon.com/512/1038/1038854.png');
+            background-size: cover;
+            background-position: center;
+            width: 150px;
+            height: 200px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .envelope:hover {
+            transform: scale(1.1);
+        }
+        img {
+            display: none;
+            margin-top: 20px;
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chúc Mừng Năm Mới!</h1>
+        <p>Nhấn vào bao lì xì để mở</p>
+        <button class="envelope" onclick="showImage()"></button>
+        <img id="luckyImage" src="https://source.unsplash.com/random/300x300" alt="Nội dung lì xì">
+    </div>
+
+    <script>
+        function showImage() {
+            const img = document.getElementById('luckyImage');
+            img.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
